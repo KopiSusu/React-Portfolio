@@ -1,0 +1,30 @@
+@import './../../themes/constants.styl'
+
+// Imprt all themes in here
+@import './../../themes/grid.styl'
+	
+.left
+	float left
+.right
+	float right
+
+// containers
+#main
+	position relative
+	height 100%
+	.app
+		position relative
+		height 100%
+		.dashboard
+			position relative
+			height 100%
+			.view
+				position relative
+				height viewHeight
+			.workspace
+				height 100%
+				width "calc(100% - %s)" % sidenavWidth
+.inline
+	display inline-block
+
+

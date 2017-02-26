@@ -1,0 +1,85 @@
+@import './constants.styl'
+
+//Columns
+// ex .column-4 === width 25%
+generate-column()
+	for n, x in 1..12
+		.column-{x}
+			display inline-block
+			vertical-align top
+			width (100% / x)
+			&.center
+				margin-left: ((100% / x)/ 2);
+				@media only screen and (max-width: 600px)
+					margin-left 0 
+			&.first
+				padding-left 0
+				@media only screen and (max-width: 600px)
+					padding-left (padding/2)
+			&.last
+				padding-right 0
+				@media only screen and (max-width: 600px)
+					padding-right (padding/2) 
+			@media only screen and (max-width: 600px)
+				width 100%
+
+// ex .column-5-3 === width 60% 
+// ex .column-5-2 === width 40%
+generate-column-fill()
+	for n, x in 1..12
+		for n, y in 1..x
+			.column-{x}-{y}
+				display inline-block
+				vertical-align top
+				width (100% / x) * y
+				@media only screen and (max-width: 600px)
+					width 100%
+						
+				
+// ex .column-5-offset-2
+generate-column-offset()
+	for n, x in 1..12
+		for n, y in 1..x
+			.column-{x}-offset-{y + 1}
+				display inline-block
+				vertical-align top
+				margin-left (100% / x) * y
+				width (100% / x)
+				@media only screen and (max-width: 600px)
+					width 100%
+generate-column()
+generate-column-fill()
+generate-column-offset()
+
+
+// Rows
+// ex .row-4 === height 25%
+generate-row()
+	for n, x in 1..12
+		.row-{x}
+			height (100% / x)
+			@media only screen and (max-width: 600px)
+				height (100% / x)
+
+// ex .row-5-3 === height 60% 
+// ex .row-5-2 === height 40%
+generate-row-fill()
+	for n, x in 1..12
+		for n, y in 1..x
+			.row-{x}-{y}
+				height (100% / x) * y
+				@media only screen and (max-width: 600px)
+					height (100% / x) * y
+				
+// ex .row-5-offset-2
+generate-row-offset()
+	for n, x in 1..12
+		for n, y in 1..x
+			.row-{x}-offset-{y + 1}
+				margin-top (100% / x) * y
+				height (100% / x)
+				@media only screen and (max-width: 600px)
+					height (100% / x)
+generate-row()
+generate-row-fill()
+generate-row-offset()

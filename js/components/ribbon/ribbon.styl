@@ -1,0 +1,19 @@
+@import './../../themes/constants.styl'
+
+.ribbon
+	height ribbonHeight
+	background fgColor
+	padding 0 (padding*2)
+	border solid borderColor
+	border-width 0 0 1px
+	*
+		display inline-block
+		height ribbonHeight
+		line-height ribbonHeight
+
+.brand
+	font-size 20px
+	span
+		color primaryBrandColor
+		&:last-of-type
+			color secondaryBrandColor
