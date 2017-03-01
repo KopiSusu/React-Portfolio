@@ -4,7 +4,6 @@ import _ from 'lodash'
 import { Provider } from 'react-redux'
 import { Router, Route, IndexRoute, browserHistory, Redirect } from 'react-router'
 import { syncHistoryWithStore, routerReducer } from 'react-router-redux'
-import { ReduxAsyncConnect } from 'redux-async-connect'
 import {configureStore} from './store/configure-store';
 
 import getRoutes from './routes';

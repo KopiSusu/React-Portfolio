@@ -1,19 +1,34 @@
 @import './../../themes/constants.styl'
+@import './../../themes/animations.styl'
 
 .ribbon
-	height ribbonHeight
-	background fgColor
-	padding 0 (padding*2)
-	border solid borderColor
-	border-width 0 0 1px
+	position fixed
+	padding (padding) (padding*2)
+	top 0
+	width 100%
+	height 70px
+	z-index 100
+	animation(fadeInDown cubic-bezier(0.4, 0, 0.2, 1) 5s)
+	transition()
+	@media only screen and (max-width: 600px)
+		padding (padding) 5px
 	*
+		color fgColor
+	a
+		color inherit
+		cursor pointer
+	.row
 		display inline-block
-		height ribbonHeight
-		line-height ribbonHeight
-
-.brand
-	font-size 20px
-	span
-		color primaryBrandColor
-		&:last-of-type
-			color secondaryBrandColor
+		p
+			display inline-block 
+			font-size 10px
+			line-height 25px
+			padding 0 10px
+		svg
+			width 30px
+			height 100%
+		&.right
+			float right
+			padding 0 10px
+			@media only screen and (max-width: 600px)
+				padding 0 5px

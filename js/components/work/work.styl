@@ -1,0 +1,90 @@
+@import './../../themes/constants.styl'
+@import './../../themes/animations.styl'
+
+emailColor = rgb(102, 217, 339)
+
+.work
+	position relative
+	text-align center
+	overflow-x hidden
+	background fgColor
+	padding (padding*5) (padding*3) (padding*8)
+	height auto
+	width 100%
+	@media only screen and (max-width: 600px)
+		padding (padding*5) (padding*2) (padding*8)
+	.title
+		padding (padding*5) (padding*2)
+		margin 0 0
+	.email
+		cursor pointer
+		text-decoration none
+		display inline-block
+		color emailColor
+		border-bottom 1px dotted emailColor
+	.example
+		position relative
+		padding (padding*5) (padding*5) (padding*5) (padding*10)
+		text-align left
+		height 400px
+		@media only screen and (max-width: 600px)
+			padding (padding*5) 0 !important
+			height auto
+			float right
+			text-align center
+		&.right
+			padding (padding*5) (padding*10) (padding*5) (padding*5)
+			@media only screen and (max-width: 600px)
+				float left
+		.image
+			width 100%
+			height 100%
+			background-repeat no-repeat
+			background-position top
+			background-size contain
+		.laptop
+			margin 15px auto
+			position relative
+			height 270px
+			width 450px
+			@media only screen and (max-width: 600px)
+				width 280px
+				height 170px
+			.image
+				position absolute
+				left 62px
+				top 24px
+				max-width 327px
+				height 205px
+				background-repeat no-repeat
+				background-position top
+				background-size contain
+				@media only screen and (max-width: 600px)
+					left 40px
+					top 16px
+					height 125px
+					max-width 200px
+					
+		.text
+			position relative
+			.inner
+				position absolute
+				top 50% 
+				left 0
+				transform translate(0, -50%)
+				@media only screen and (max-width: 600px)
+					position relative
+					transform translate(0, 0%)
+			p
+				padding (padding) 0
+			li
+				list-style circle
+				font-size 12px
+				color fontColor
+
+
+
+
+
+
+

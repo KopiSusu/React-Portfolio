@@ -1,0 +1,34 @@
+@import './../../themes/constants.styl'
+@import './../../themes/animations.styl'
+
+nodeColor = rgb(130, 190, 70)
+
+.contact
+	position relative
+	text-align center
+	overflow hidden
+	background darken(htmlColor, 5)
+	padding (padding*10) (padding*10)
+	@media only screen and (max-width: 600px)
+		padding (padding*5) (padding)
+	h1
+		padding padding
+		margin padding 0
+	p
+		padding padding
+		font-size 18px
+		margin padding 0
+	a
+		display inline-block
+		padding padding (padding*5)
+		margin padding 0
+		border 3px solid darken(bgColor, 5)
+		border-radius 50px
+		color darken(bgColor, 5)
+		text-decoration none
+		cursor pointer
+		transition()
+		&:hover
+			background darken(bgColor, 5)
+			padding padding (padding*10)
+			color htmlColor

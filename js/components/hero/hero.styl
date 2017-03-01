@@ -1,0 +1,93 @@
+@import './../../themes/constants.styl'
+@import './../../themes/animations.styl'
+
+.hero
+	position relative
+	text-align center
+	overflow hidden
+	background lighten(bgColor, 2)
+	padding (padding*4) padding
+	height 100%
+	width 100%
+	@media only screen and (max-width: 600px)
+		padding (padding*4) (padding)
+		height auto
+	.logo
+		padding (padding*2) 0
+		@media only screen and (max-width: 600px)
+			height 200px
+		svg
+			width auto
+			display inline-block
+			stroke transparent
+			padding 0 (padding(2))
+			background transparent
+			fill darken(fgColor, 10)
+			border-radius 100%
+			animation(fadeInDown cubic-bezier(0.4, 0, 0.2, 1) 2s)
+			transition()
+	.row
+		h1
+			&.title
+				display block
+		h1
+			font-weight 400
+			display inline-block
+			color darken(fgColor, 10)
+			white-space nowrap
+			@media only screen and (max-width: 600px)
+				font-size 15px
+				span
+					transform none !important
+					
+			span
+				display inline-block
+				transition()
+				&:nth-of-type(1)
+					color white
+				&:nth-of-type(2)
+					color htmlColor
+				&:nth-of-type(3)
+					color white
+				&:nth-of-type(4)
+					color firstColor
+					letter-spacing 5px
+					transform rotate(-10deg) translate3d(0, 15px, 0)
+				&:nth-of-type(5)
+					color secondColor
+					letter-spacing 5px
+					transform rotate(-10deg) translate3d(0, 10px, 0)
+				&:nth-of-type(6)
+					color thirdColor
+					letter-spacing 5px
+					transform rotate(-10deg) translate3d(0, 5px, 0)
+				&:nth-of-type(7)
+					color fourthColor
+					letter-spacing 5px
+					transform rotate(-10deg) translate3d(0, 0px, 0)
+				&:nth-of-type(8)
+					color fifthColor
+					letter-spacing 5px
+					transform rotate(-10deg) translate3d(0, -5px, 0)
+				&:nth-of-type(9)
+					color sixthColor
+					letter-spacing 5px
+					transform rotate(-10deg) translate3d(0, -10px, 0)
+		p
+			color darken(fgColor, 10)
+			font-size 20px
+			@media only screen and (max-width: 600px)
+				font-size 10px
+		.button
+			cursor pointer
+			display inline-block
+			width auto
+			padding 0
+			border-radius 3px
+			@media only screen and (max-width: 600px)
+				margin-top (padding*2)
+			svg
+				fill darken(fgColor, 10)
+				animation(bounceDown 2s infinite)
+				
+			

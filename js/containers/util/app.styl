@@ -1,12 +1,14 @@
 @import './../../themes/constants.styl'
+@import './../../themes/grid.styl'
 
 // General
 body, html
 	height 100%
 	background bgColor
 	font-family fontFamily
-	color fontColor
+	color darken(bgColor, 5)
 	overflow hidden
+	line-height 1.6
 	-webkit-font-smoothing antialiased
 	-moz-osx-font-smoothing grayscale
 	text-shadow rgba(0, 0, 0, .01) 0 0 1px
@@ -23,14 +25,58 @@ h1,h2,h3,h4,p
 	font-family secondaryFontFamily
 	letter-spacing 0.75px
 h1
-	font-size 20px
+	font-size 40px
+	@media only screen and (max-width: 600px)
+		font-size 20px
 h2
-	font-size 18px
+	font-size 30px
+	@media only screen and (max-width: 600px)
+		font-size 18px
 h3
-	font-size 16px
+	font-size 20px
+	@media only screen and (max-width: 600px)
+		font-size 16px
 h4
 	font-family fontFamily
-	font-size 14px
+	font-size 18px
+	@media only screen and (max-width: 600px)
+		font-size 14px
 p
 	font-family fontFamily
-	font-size 12px
+	font-size 14px
+	@media only screen and (max-width: 600px)
+		font-size 12px
+	
+// overwrites
+.Typist
+	@media only screen and (max-width: 600px)
+		white-space nowrap
+.Typist .Cursor--blinking 
+	opacity 1
+	display inline-block
+	color darken(fgColor, 5)
+	margin-left padding
+	font-size 40px
+	animation blink 1s linear infinite
+	@media only screen and (max-width: 600px)
+		font-size 15px
+		margin-left 0
+.Static .Cursor--blinking 
+	opacity 1
+	display inline-block
+	color darken(fgColor, 5)
+	margin-left padding
+	font-size 40px
+	animation blink 1s linear infinite
+	@media only screen and (max-width: 600px)
+		font-size 15px
+		margin-left 0
+  	
+
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
