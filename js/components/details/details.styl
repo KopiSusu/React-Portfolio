@@ -25,11 +25,14 @@ nodeColor = rgb(130, 190, 70)
 			text-align center
 			div
 				@media only screen and (max-width: 600px)
+					width calc(100%/3)    
 					padding 0 0 (padding*2) 
 			h2
 				font-size 20px
 				color htmlColor
 				padding 0 0 (padding) 0
+				@media only screen and (max-width: 600px)
+					font-size 16px
 				span
 					color white
 			svg
@@ -40,9 +43,13 @@ nodeColor = rgb(130, 190, 70)
 				fill darken(fgColor, 10)
 				stroke darken(bgColor, 5)
 				stroke-width 0.4
+				@media only screen and (max-width: 600px)
+					height 100px
 			p
 				font-size 14px
 				color darken(bgColor, 5)
+				@media only screen and (max-width: 600px)
+					font-size 12px
 			.fat
 				svg
 					width 100%

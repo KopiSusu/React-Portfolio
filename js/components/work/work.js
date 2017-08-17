@@ -84,6 +84,67 @@ export default class Work extends Component {
               ) : null
             }
           </div>
+          <div className="right example row-4-3">
+            <div className="row-1 column-2">
+              <div className='laptop image' style={
+                {
+                  backgroundImage: `url(//web5.bnamericas.com/bnamericas/landing/marketing_media/img/macbook.png)`
+                }}>
+                <div className='image' style={
+                  {
+                    backgroundImage: `url(//s3.amazonaws.com/datadummy/wakepark.png)`
+                  }}/>
+                </div>
+            </div>
+            <div className="text row-1 column-2">
+              <div className="inner">
+                <h2>Bali Wake Park</h2>
+                <li>React, AWS, Javascript, HTML5/CSS3, Stylus</li>
+                <p>Bali Wake Park is a new and exciting addition in the world of water sports. Bali Wake Park features state-of-the-art full size cable systems built around a 5 hectare lake, and is the first and only wakeboard park in Bali, Indonesia.</p>
+                <a className="email" href="//baliwakepark.com/">Check it out</a>
+              </div>
+            </div>
+          </div>
+          <div className="example row-4-3">
+            {
+              this.state.mobile ? (
+                <div className="row-1 column-2">
+                  <div className='laptop image' style={
+                    {
+                      backgroundImage: `url(//web5.bnamericas.com/bnamericas/landing/marketing_media/img/macbook.png)`
+                    }}>
+                    <div className='image' style={
+                      {
+                        backgroundImage: `url(//s3.amazonaws.com/datadummy/kip.png)`
+                      }}/>
+                    </div>
+                </div>
+              ) : null
+            }
+            <div className="text row-1 column-2">
+              <div className="inner">
+                <h2>Kip</h2>
+                <li>React, Redux, Javascript, D3, HTML5/CSS3, WebSocket, Node</li>
+                <p>With over 1MM users spread across 100,000 Slack teams, Kip helps groups save time and frustration by collecting orders across across multiple messaging platforms and coordinating group shopping carts into a single checkout.</p>
+                <a className="email" href="//www.kipthis.com">Check it out</a>
+              </div>
+            </div>  
+            {
+              !this.state.mobile ? (
+                <div className="row-1 column-2">
+                  <div className='laptop image' style={
+                    {
+                      backgroundImage: `url(//web5.bnamericas.com/bnamericas/landing/marketing_media/img/macbook.png)`
+                    }}>
+                    <div className='image' style={
+                      {
+                        backgroundImage: `url(//s3.amazonaws.com/datadummy/kip.png)`
+                      }}/>
+                    </div>
+                </div>
+              ) : null
+            }
+          </div>
         </div>
       </div>
     );
