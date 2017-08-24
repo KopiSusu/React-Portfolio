@@ -3,15 +3,21 @@
 
 .hero
 	position relative
+	display flex
+	flex-wrap wrap
 	text-align center
 	overflow hidden
 	background lighten(bgColor, 2)
 	padding (padding*4) padding
-	height 100%
 	width 100%
 	@media only screen and (max-width: 600px)
+		display table
+	.content 
+		display table-cell
+		vertical-align middle 
+		margin 0 auto
+	@media only screen and (max-width: 600px)
 		padding (padding*4) (padding)
-		height auto
 	.logo
 		padding (padding*2) 0
 		@media only screen and (max-width: 600px)

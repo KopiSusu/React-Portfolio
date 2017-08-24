@@ -70,7 +70,7 @@ export default class Work extends Component {
                 {
                   backgroundImage: `url(//media.licdn.com/mpr/mpr/shrinknp_400_400/p/1/005/036/3e5/063a51e.jpg)`
                 }}/>
-              <p>Rachel Law - Kip - CEO</p>
+              <p>Rachel Law <br/> <span>Kip - CEO</span></p>
             </div>
           </div>
           <div className="right example row-4-3">
@@ -101,7 +101,7 @@ export default class Work extends Component {
                 {
                   backgroundImage: `url(//media.licdn.com/mpr/mpr/shrinknp_400_400/p/1/005/04e/15c/217ca02.jpg)`
                 }}/>
-              <p>Mike Dee - The Foodworks - CTO</p>
+              <p>Mike Dee <br/> <span>The Foodworks - CTO</span></p>
             </div>
           </div>
           <div className="example row-4-3">
@@ -151,7 +151,7 @@ export default class Work extends Component {
                 {
                   backgroundImage: `url(//media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAXDAAAAJGRjNjQ4MmRiLTgwMjgtNGE1ZS1hZWE2LTMxNDA1MTkwZjUyNw.jpg)`
                 }}/>
-              <p>Bob Ferrante - Information Builders - Director of Product Management</p>
+              <p>Bob Ferrante <br/> <span>Info Builders - Product Director</span></p>
             </div>
           </div>
           <div className="right example row-4-3">
@@ -182,7 +182,7 @@ export default class Work extends Component {
                 {
                   backgroundImage: `url(//scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/12400868_10153157306611222_4735908623573174562_n.jpg?oh=f3141541fc07255d9f62808dbcef7f00&oe=5A1EBFA9)`
                 }}/>
-              <p>Kimo Rusna - Bali Wake Park - CEO</p>
+              <p>Kimo Rusna <br/> <span>Bali Wake Park - CEO</span></p>
             </div>
           </div>
         </div>

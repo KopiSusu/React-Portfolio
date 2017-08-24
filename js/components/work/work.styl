@@ -83,11 +83,15 @@ emailColor = rgb(102, 217, 339)
 	.review
 		padding 0 50px 50px
 		border-bottom 2px solid #e3e3e3
+		@media only screen and (max-width: 600px)
+			padding 0 0 50px
 		p 
 			padding 0 25%
 			font-size 12px
 			line-height 20px
 			font-weight bold
+			@media only screen and (max-width: 600px)
+				padding 0
 			span
 				font-size 20px
 		.person 
@@ -98,12 +102,20 @@ emailColor = rgb(102, 217, 339)
 				height 50px
 				width 50px
 				background-size cover
-				border-radius 100%;
+				border-radius 100%
 			p
-				line-height 50px
-				font-size 14px;
-				padding 0 20px;
+				line-height 25px
+				font-size 14px
+				padding 0 20px
 				font-weight 500
+				text-align left
+				span 
+					font-size 14px
+					@media only screen and (max-width: 600px)
+						font-size	12px
+				@media only screen and (max-width: 600px)
+					font-size	12px
+					padding 0 10px
 
 
 
