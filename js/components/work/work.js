@@ -70,7 +70,7 @@ export default class Work extends Component {
                 {
                   backgroundImage: `url(//media.licdn.com/mpr/mpr/shrinknp_400_400/p/1/005/036/3e5/063a51e.jpg)`
                 }}/>
-              <p>Rachel Law <br/> <span>Kip - CEO</span></p>
+              <p>Rachel Law <br/> <span>CEO</span></p>
             </div>
           </div>
           <div className="right example row-4-3">
@@ -101,7 +101,7 @@ export default class Work extends Component {
                 {
                   backgroundImage: `url(//media.licdn.com/mpr/mpr/shrinknp_400_400/p/1/005/04e/15c/217ca02.jpg)`
                 }}/>
-              <p>Mike Dee <br/> <span>The Foodworks - CTO</span></p>
+              <p>Mike Dee <br/> <span>CTO</span></p>
             </div>
           </div>
           <div className="example row-4-3">
@@ -145,13 +145,13 @@ export default class Work extends Component {
             }
           </div>
           <div className='review row-1 column-1'>
-            <p><span>"</span>Koh has consistently been a huge help to the PMF Team, both with design/UX and programing. He helped rebuild PMF into a response, modern business analytics application.<span>"</span></p>
+            <p><span>"</span>Koh has consistently been a huge help to the PMF Team, both with design and programing. He helped rebuild PMF into a response, modern business analytics application.<span>"</span></p>
             <div className='person'>
               <div className='image' style={
                 {
                   backgroundImage: `url(//media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAXDAAAAJGRjNjQ4MmRiLTgwMjgtNGE1ZS1hZWE2LTMxNDA1MTkwZjUyNw.jpg)`
                 }}/>
-              <p>Bob Ferrante <br/> <span>Info Builders - Product Director</span></p>
+              <p>Bob Ferrante <br/> <span>Director of Software Products</span></p>
             </div>
           </div>
           <div className="right example row-4-3">
@@ -182,7 +182,7 @@ export default class Work extends Component {
                 {
                   backgroundImage: `url(//scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/12400868_10153157306611222_4735908623573174562_n.jpg?oh=f3141541fc07255d9f62808dbcef7f00&oe=5A1EBFA9)`
                 }}/>
-              <p>Kimo Rusna <br/> <span>Bali Wake Park - CEO</span></p>
+              <p>Kimo Rusna <br/> <span>CEO</span></p>
             </div>
           </div>
         </div>
