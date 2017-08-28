@@ -4,10 +4,11 @@
 // General
 body, html
 	height 100%
-	background bgColor
+	background white
 	font-family fontFamily
 	color darken(bgColor, 5)
 	overflow hidden
+	font-family 'Montserrat', sans-serif
 	line-height 1.6
 	-webkit-font-smoothing antialiased
 	-moz-osx-font-smoothing grayscale
@@ -54,9 +55,10 @@ p
 .Typist .Cursor--blinking 
 	opacity 1
 	display inline-block
-	color darken(fgColor, 5)
-	margin-left padding
-	font-size 40px
+	color lighten(#555, 15)
+	margin-left 2px
+	font-size 30px
+	line-height 70px  
 	animation blink 1s linear infinite
 	@media only screen and (max-width: 600px)
 		font-size 15px
@@ -64,19 +66,20 @@ p
 .Static .Cursor--blinking 
 	opacity 1
 	display inline-block
-	color darken(fgColor, 5)
-	margin-left padding
-	font-size 40px
+	color lighten(#555, 15)
+	margin-left 2px
+	font-size 30px
+	line-height 70px 
 	animation blink 1s linear infinite
 	@media only screen and (max-width: 600px)
 		font-size 15px
 		margin-left 0
-  	
+		
 
 @keyframes blink {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
+	0% {
+		opacity: 1; }
+	50% {
+		opacity: 0; }
+	100% {
+		opacity: 1; } }

@@ -7,7 +7,7 @@ nodeColor = rgb(130, 190, 70)
 	position relative
 	text-align center
 	overflow hidden
-	background darken(htmlColor, 5)
+	background #f6f9fc
 	padding (padding*10) (padding*10)
 	@media only screen and (max-width: 600px)
 		padding (padding*5) (padding)
@@ -22,13 +22,14 @@ nodeColor = rgb(130, 190, 70)
 		display inline-block
 		padding padding (padding*5)
 		margin padding 0
-		border 3px solid darken(bgColor, 5)
+		border 3px solid lighten(#a75fc5, 5)
 		border-radius 50px
-		color darken(bgColor, 5)
+		color lighten(#a75fc5, 5)
 		text-decoration none
 		cursor pointer
 		transition()
 		&:hover
-			background darken(bgColor, 5)
+			background lighten(#a75fc5, 5)
 			padding padding (padding*10)
-			color htmlColor
+			color skyBlue
+			border 3px solid lighten(#a75fc5, 5)

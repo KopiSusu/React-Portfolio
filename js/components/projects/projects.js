@@ -13,7 +13,7 @@ export default class Projects extends Component {
       <div className="projects"> 
         <div className="column-1 row-1">
           <div className="title row-4">
-            <h1>Projects <span className='dev'>(Under Development)</span></h1>
+            <h1>Projects</h1>
             <p>When I'm not working with someone, I'm working on my own projects.</p>
           </div>
           <div className="block row-4-3">

@@ -30,7 +30,7 @@ export default class Details extends Component {
           <div className="skills row-4-3">
             <div className="column-3 row-1"> 
               <Icon icon='Server'/>
-              <h2><span>{'<'}</span>Server<span>{'>'}</span></h2>
+              <h2><span>{'<'} &nbsp;</span>Server<span>&nbsp;{'/>'}</span></h2>
               <p>Node</p>
               <p>MongoDB</p>
               <p>Postgres</p>
@@ -40,7 +40,7 @@ export default class Details extends Component {
             </div>
             <div className="column-3 row-1"> 
               <Icon icon='Client'/>
-              <h2><span>{'<'}</span>Client<span>{'>'}</span></h2>
+              <h2><span>{'<'} &nbsp;</span>Client<span> &nbsp;{'/>'}</span></h2>
               <p>React</p>
               <p>Angular</p>
               <p>jQuery</p>
@@ -50,7 +50,7 @@ export default class Details extends Component {
             </div>
             <div className="column-3 row-1"> 
               <Icon icon='Mobile'/>
-              <h2><span>{'<'}</span>Mobile<span>{'>'}</span></h2>
+              <h2><span>{'<'} &nbsp;</span>Mobile<span> &nbsp;{'/>'}</span></h2>
               <p>React Native iOS</p>
               <p>React Native Android</p>
             </div>

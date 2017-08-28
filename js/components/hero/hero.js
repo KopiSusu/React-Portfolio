@@ -8,7 +8,7 @@ import * as actions from './../../actions/index';
 
 import Typist from 'react-typist';
 
-import { Logo, Icon, Fat} from './../../themes';
+import { Logo, Icon, Fat, Circle} from './../../themes';
 
 import './hero.styl';
 
@@ -42,11 +42,8 @@ export default class Hero extends Component {
     return (
       <div className="hero" style={{height: window.innerHeight}}> 
         <div className='content'>
-        	<div className="logo row row-9-4">
-          	<Logo/>
-        	</div>
-        	<div className="row">
-            <h1 className='title'>Hi, I'm Koh! I <span>{'<'}</span><span>build</span><span>{'>'}</span> & <span>D</span><span>E</span><span>S</span><span>I</span><span>G</span><span>N</span></h1>
+          <div className="row">
+            <h1 className='title'>Hi, I'm Koh! I <span>{'<'}&nbsp;</span><span>build</span><span>&nbsp;{'/>'}</span> & <span>D</span><span>E</span><span>S</span><span>I</span><span>G</span><span>N</span></h1>
             {
               this.state.typing ?
               <Typist 
@@ -58,7 +55,7 @@ export default class Hero extends Component {
           </div>
           <div className="row row-19">
           </div>
-        	<div className="action row row-8">
+          <div className="action row row-8">
             <div className="button row-1">
               <p className="row-2">Yes, I am available for hire!</p>
               <Icon icon='Down' iconClass="row-2"/>
@@ -66,6 +63,15 @@ export default class Hero extends Component {
           </div>
           <div className="row row-16">
           </div>
+        </div>
+        <div className='background'>
+          {
+            [0,1,2].map((i) => (
+              <div key={i} className='water'>
+                <div className='reflection'></div>
+              </div>
+            ))
+          }
         </div>
       </div>
     );

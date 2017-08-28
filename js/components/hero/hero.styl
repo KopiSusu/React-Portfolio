@@ -6,16 +6,69 @@
 	display flex
 	flex-wrap wrap
 	text-align center
-	overflow hidden
-	background lighten(bgColor, 2)
+	background skyBlue
 	padding (padding*4) padding
 	width 100%
 	@media only screen and (max-width: 600px)
 		display table
+	// .circle
+	// 	position absolute
+	// 	bottom 60px
+	// 	width 25%
+	// 	left 37.5%
+	// 	svg
+	// 		width 100%
+	// 		height 100%
+	// 		fill lighten(#a75fc5, 30)
+	.background 
+		position absolute
+		bottom 0
+		left 0
+		right 0
+		height 275px
+		.water 
+			position relative
+			height 160px
+			width 150%
+			margin -50px 0 0 -25%
+			transform rotate(3deg)
+			text-align center
+			-webkit-backface-visibility hidden
+			.reflection
+				position relative
+				margin 0 auto
+				border-left 50px solid transparent
+				border-right 50px solid transparent
+				height 0
+				width 25%
+				-webkit-backface-visibility hidden
+			&:first-of-type 
+				margin 0 0 0 -25%
+				background darken(skyBlue, 2.5)
+				border-top 10px solid darken(skyBlue, 2.5)
+				.reflection
+					width 25%
+					border-bottom 300px solid lighten(#a75fc5, 25)
+			&:nth-of-type(2)
+				transform rotate(-1deg)
+				background darken(skyBlue, 5)
+				border-top 10px solid darken(skyBlue, 5)
+				.reflection
+					width 30%
+					border-bottom 300px solid lighten(#a75fc5, 20)
+			&:nth-of-type(3)
+				transform rotate(2deg)
+				background darken(skyBlue, 7.5)
+				border-top 10px solid darken(skyBlue, 7.5)
+				.reflection
+					width 35%
+					border-bottom 300px solid lighten(#a75fc5, 15)
 	.content 
 		display table-cell
 		vertical-align middle 
 		margin 0 auto
+		padding 100px 0 0 0
+		z-index 1
 	@media only screen and (max-width: 600px)
 		padding (padding*4) (padding)
 	.logo
@@ -39,7 +92,7 @@
 		h1
 			font-weight 400
 			display inline-block
-			color darken(fgColor, 10)
+			color #555
 			white-space nowrap
 			@media only screen and (max-width: 600px)
 				font-size 15px
@@ -50,37 +103,37 @@
 				display inline-block
 				transition()
 				&:nth-of-type(1)
-					color white
+					color darken(skyBlue, 10)
 				&:nth-of-type(2)
-					color htmlColor
+					color lighten(htmlColor, 15)
 				&:nth-of-type(3)
-					color white
+					color darken(skyBlue, 10)
 				&:nth-of-type(4)
-					color firstColor
+					color lighten(#a75fc5, 15)
 					letter-spacing 5px
 					transform rotate(-10deg) translate3d(0, 15px, 0)
 				&:nth-of-type(5)
-					color secondColor
+					color lighten(secondColor, 15)
 					letter-spacing 5px
 					transform rotate(-10deg) translate3d(0, 10px, 0)
 				&:nth-of-type(6)
-					color thirdColor
+					color lighten(thirdColor, 15)
 					letter-spacing 5px
 					transform rotate(-10deg) translate3d(0, 5px, 0)
 				&:nth-of-type(7)
-					color fourthColor
+					color lighten(fourthColor, 15)
 					letter-spacing 5px
 					transform rotate(-10deg) translate3d(0, 0px, 0)
 				&:nth-of-type(8)
-					color fifthColor
+					color lighten(fifthColor, 15)
 					letter-spacing 5px
 					transform rotate(-10deg) translate3d(0, -5px, 0)
 				&:nth-of-type(9)
-					color sixthColor
+					color lighten(sixthColor, 15)
 					letter-spacing 5px
 					transform rotate(-10deg) translate3d(0, -10px, 0)
 		p
-			color darken(fgColor, 10)
+			color #555
 			font-size 20px
 			@media only screen and (max-width: 600px)
 				font-size 10px
@@ -93,7 +146,7 @@
 			@media only screen and (max-width: 600px)
 				margin-top (padding*2)
 			svg
-				fill darken(fgColor, 10)
+				fill #555
 				animation(bounceDown 2s infinite)
 				
 			
