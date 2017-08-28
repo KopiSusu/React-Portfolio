@@ -1,7 +1,7 @@
 const initialState = {
 	textOptions: [
 		'Full Stack Web Applications',
-		'React Native iOS/Android Apps',
+		'iOS/Android Apps',
 		'Landing Pages',
 		'User Interfaces',
 		'Messenger Bots',

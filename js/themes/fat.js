@@ -10,7 +10,7 @@ export default class Logo extends Component {
 			Created by potrace 1.13, written by Peter Selinger 2001-2015
 			</metadata>
 			<g transform="translate(0.000000,517.000000) scale(0.100000,-0.100000)"
-			strokeWidth="10">
+			strokeWidth="5">
 			<path d="M1843 4860 c-18 -11 -33 -26 -33 -33 0 -11 -12 -13 -47 -10 -59 6
 			-109 -23 -136 -80 -12 -24 -25 -37 -39 -37 -11 0 -33 -14 -50 -30 -28 -28 -30
 			-35 -26 -85 4 -44 2 -56 -12 -60 -25 -8 -50 -59 -50 -103 l0 -39 -127 -6

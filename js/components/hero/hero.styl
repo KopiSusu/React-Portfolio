@@ -11,29 +11,110 @@
 	width 100%
 	@media only screen and (max-width: 600px)
 		display table
-	// .circle
-	// 	position absolute
-	// 	bottom 60px
-	// 	width 25%
-	// 	left 37.5%
-	// 	svg
-	// 		width 100%
-	// 		height 100%
-	// 		fill lighten(#a75fc5, 30)
+	.content 
+		display inline-block
+		width 100%
+	@media only screen and (max-width: 600px)
+		padding (padding*4) (padding)
+	.face
+		position absolute
+		bottom 375px
+		width 200px
+		left calc(50% - 100px)
+		svg
+			width 100%
+			height 100%
+			transform rotate(5deg) rotateY(20deg)
+			stroke lighten(#a75fc5, 20)	
+			fill lighten(#a75fc5, 20)	
+	.text
+		position absolute
+		bottom 0
+		width 100%
+		left 0px
+		padding 100px 150px 270px
+		z-index 1
+		& > div
+			padding 40px 0
+			h1
+				display inline-block
+				text-align center
+				padding 0 15px
+				font-size 30px
+				font-weight 900
+				width auto
+				background lighten(#a75fc5, 20)	
+				color white
+		h1
+			display block
+			width 50%
+			font-size 25px
+			font-weight 100
+			padding 10px 100px 30px
+			text-align right  
+			&:nth-of-type(2)
+				text-align left
+				margin-left 50%
+			&:nth-of-type(3)
+				text-align	center
+			span
+				&.blue
+					// background lighten(#a75fc5, 20)	
+					background darken(skyBlue, 7.5)
+					padding 0 10px
+					font-weight 500
+			span
+				&.build
+					// background lighten(#a75fc5, 20)	
+					color lighten(htmlColor, 15)
+					padding 0 10px
+					font-weight 500
+			text
+				display inline-block
+				font-weight 500
+				transition()
+				&:nth-of-type(1)
+					color darken(skyBlue, 10)
+					letter-spacing 5px
+					transform rotate(-10deg) translate3d(0, 10px, 0)
+				&:nth-of-type(2)
+					color lighten(htmlColor, 15)
+					letter-spacing 5px
+					transform rotate(-7deg) translate3d(0, 15px, 0)
+				&:nth-of-type(3)
+					color lighten(secondColor, 15)
+					letter-spacing 5px
+					transform rotate(-12deg) translate3d(0, 2px, 0)
+				&:nth-of-type(4)
+					color lighten(thirdColor, 15)
+					letter-spacing 5px
+					transform rotate(-3deg) translate3d(0, 4px, 0)
+				&:nth-of-type(5)
+					color lighten(fourthColor, 15)
+					letter-spacing 5px
+					transform rotate(9deg) translate3d(0, 10px, 0)
+				&:nth-of-type(6)
+					color lighten(fifthColor, 15)
+					letter-spacing 5px
+					transform rotate(10deg) translate3d(0, -0px, 0)
+			&:hover
+				text
+					transform rotate(0deg) translate3d(0, 0px, 0) !important
+			 
 	.background 
 		position absolute
 		bottom 0
 		left 0
 		right 0
-		height 275px
+		height 275px  
 		.water 
 			position relative
 			height 160px
 			width 150%
 			margin -50px 0 0 -25%
-			transform rotate(3deg)
+			transform rotate(0deg)
 			text-align center
-			-webkit-backface-visibility hidden
+			-webkit-backface-visibility hidden  
 			.reflection
 				position relative
 				margin 0 auto
@@ -63,14 +144,6 @@
 				.reflection
 					width 35%
 					border-bottom 300px solid lighten(#a75fc5, 15)
-	.content 
-		display table-cell
-		vertical-align middle 
-		margin 0 auto
-		padding 100px 0 0 0
-		z-index 1
-	@media only screen and (max-width: 600px)
-		padding (padding*4) (padding)
 	.logo
 		padding (padding*2) 0
 		@media only screen and (max-width: 600px)

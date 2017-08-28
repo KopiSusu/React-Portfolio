@@ -2,7 +2,7 @@
 /* eslint global-require: 0 */
 import React, { Component } from 'react';
 
-import { Logo } from './../../themes';
+import { Man, SignSmall } from './../../themes';
 
 import './footer.styl';
 
@@ -11,7 +11,7 @@ export default class Footer extends Component {
     return (
       <div className="footer"> 
         <div className="logo row row-4-2">
-          <Logo/>
+          <SignSmall/>
         </div>
         <p>Digitalized by: www.the-bengkel.com (me)</p>
       </div>

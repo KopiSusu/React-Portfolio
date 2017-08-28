@@ -8,7 +8,7 @@ import * as actions from './../../actions/index';
 
 import Typist from 'react-typist';
 
-import { Logo, Icon, Fat, Circle} from './../../themes';
+import { Logo, Icon, Face, Circle, Fat, Man} from './../../themes';
 
 import './hero.styl';
 
@@ -41,28 +41,20 @@ export default class Hero extends Component {
 
     return (
       <div className="hero" style={{height: window.innerHeight}}> 
-        <div className='content'>
-          <div className="row">
-            <h1 className='title'>Hi, I'm Koh! I <span>{'<'}&nbsp;</span><span>build</span><span>&nbsp;{'/>'}</span> & <span>D</span><span>E</span><span>S</span><span>I</span><span>G</span><span>N</span></h1>
-            {
-              this.state.typing ?
-              <Typist 
-                cursor={{
-                  show: true
-                }} avgTypingDelay={100} stdTypingDelay={0} onTypingDone={this.done}><h1>{selectedText}</h1></Typist>
-              : <div className='Static'><h1>{selectedText}</h1><span className='Cursor Cursor--blinking'>|</span></div>
-            }
-          </div>
-          <div className="row row-19">
-          </div>
-          <div className="action row row-8">
-            <div className="button row-1">
-              <p className="row-2">Yes, I am available for hire!</p>
-              <Icon icon='Down' iconClass="row-2"/>
-            </div>
-          </div>
-          <div className="row row-16">
-          </div>
+        <div className='text'> 
+          <h1> Hi! I'm <span className='blue'>Koh</span><br/> Welcome to The Bengkel</h1>
+          <h1>I &nbsp;<span className='build'>&nbsp;{'<Build/>'}&nbsp;</span>&nbsp; and <br/> &nbsp;<text>D</text><text>E</text><text>S</text><text>I</text><text>G</text><text>N</text></h1>
+          {
+            this.state.typing ?
+            <Typist 
+              cursor={{
+                show: true
+              }} avgTypingDelay={100} stdTypingDelay={0} onTypingDone={this.done}><h1>{selectedText}</h1></Typist>
+            : <div className='Static'><h1>{selectedText}</h1><span className='Cursor Cursor--blinking'>|</span></div>
+          }
+        </div>
+        <div className='face'>
+          <Man/>
         </div>
         <div className='background'>
           {
