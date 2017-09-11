@@ -27,6 +27,10 @@
 			transform rotate(5deg) rotateY(20deg)
 			stroke lighten(#a75fc5, 20)	
 			fill lighten(#a75fc5, 20)	
+		@media only screen and (max-width: 600px)
+			bottom 200px
+			width 50%
+			left 25%
 	.text
 		position absolute
 		bottom 0
@@ -34,17 +38,22 @@
 		left 0px
 		padding 100px 150px 270px
 		z-index 1
+		@media only screen and (max-width: 600px)
+			padding 130px 0
 		& > div
 			padding 40px 0
+			@media only screen and (max-width: 600px)
+				padding 20px 0 40px
 			h1
 				display inline-block
 				text-align center
 				padding 0 15px
 				font-size 30px
-				font-weight 900
+				font-weight 500
 				width auto
-				background lighten(#a75fc5, 20)	
-				color white
+				color lighten(#a75fc5, 20)	
+				@media only screen and (max-width: 600px)
+					font-size 20px
 		h1
 			display block
 			width 50%
@@ -52,18 +61,33 @@
 			font-weight 100
 			padding 10px 100px 30px
 			text-align right  
+			@media only screen and (max-width: 600px)
+				display block
+				width 100%
+				font-size 15px
+				padding 20px 
+				text-align center
+				font-weight 500
 			&:nth-of-type(2)
 				text-align left
 				margin-left 50%
+				@media only screen and (max-width: 600px)
+					margin-left 0
+					text-align center
 			&:nth-of-type(3)
 				text-align	center
 			span
+				&.fakescript
+					background #555
+					color white
+					padding 5px 10px
 				&.blue
 					// background lighten(#a75fc5, 20)	
 					background darken(skyBlue, 7.5)
 					padding 0 10px
 					font-weight 500
-			span
+				&.func
+					color #a1e22e
 				&.build
 					// background lighten(#a75fc5, 20)	
 					color lighten(htmlColor, 15)
@@ -107,14 +131,18 @@
 		left 0
 		right 0
 		height 275px  
+		@media only screen and (max-width: 600px)
+			height 150px
 		.water 
 			position relative
 			height 160px
 			width 150%
 			margin -50px 0 0 -25%
-			transform rotate(0deg)
+			transform rotate(2deg)
 			text-align center
 			-webkit-backface-visibility hidden  
+			@media only screen and (max-width: 600px)
+				height 100px
 			.reflection
 				position relative
 				margin 0 auto
@@ -130,6 +158,8 @@
 				.reflection
 					width 25%
 					border-bottom 300px solid lighten(#a75fc5, 25)
+					@media only screen and (max-width: 600px)
+						width 50%
 			&:nth-of-type(2)
 				transform rotate(-1deg)
 				background darken(skyBlue, 5)
@@ -137,6 +167,8 @@
 				.reflection
 					width 30%
 					border-bottom 300px solid lighten(#a75fc5, 20)
+					@media only screen and (max-width: 600px)
+						width 60%
 			&:nth-of-type(3)
 				transform rotate(2deg)
 				background darken(skyBlue, 7.5)
@@ -144,6 +176,8 @@
 				.reflection
 					width 35%
 					border-bottom 300px solid lighten(#a75fc5, 15)
+					@media only screen and (max-width: 600px)
+						width 70%
 	.logo
 		padding (padding*2) 0
 		@media only screen and (max-width: 600px)

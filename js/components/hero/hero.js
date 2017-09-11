@@ -8,7 +8,7 @@ import * as actions from './../../actions/index';
 
 import Typist from 'react-typist';
 
-import { Logo, Icon, Face, Circle, Fat, Man} from './../../themes';
+import { Logo, Icon, Face, Circle, Fat, Man } from './../../themes';
 
 import './hero.styl';
 
@@ -42,8 +42,8 @@ export default class Hero extends Component {
     return (
       <div className="hero" style={{height: window.innerHeight}}> 
         <div className='text'> 
-          <h1> Hi! I'm <span className='blue'>Koh</span><br/> Welcome to The Bengkel</h1>
-          <h1>I &nbsp;<span className='build'>&nbsp;{'<Build/>'}&nbsp;</span>&nbsp; and <br/> &nbsp;<text>D</text><text>E</text><text>S</text><text>I</text><text>G</text><text>N</text></h1>
+          <h1> Hi! I'm <span className='blue'>Koh</span><br/> Welcome to my Workshop 🛠</h1>
+          <h1>I &nbsp;<span className='fakescript'><span className='func'>&nbsp;render</span>({'<'}<span className='build'>{'Build'}</span>{'/>'})&nbsp;</span>&nbsp; and <br/> &nbsp;<text>D</text><text>E</text><text>S</text><text>I</text><text>G</text><text>N</text></h1>
           {
             this.state.typing ?
             <Typist 
